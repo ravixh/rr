@@ -1,118 +1,126 @@
-<html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>ravir Scott // portfolio</title>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ravir Scott</title>
 <style>
-body { margin: 10px; background: #fff; color: #000; }
-pre { margin: 0; font-family: monospace; font-size: clamp(12px, 3.4vw, 16px); white-space: pre-wrap; overflow-wrap: anywhere; }
-pre.logo { font-size: clamp(28px, 13vw, 56px); line-height: 1.1; white-space: pre; overflow-wrap: normal; font-weight: bold; }
-a { color: inherit; }
+  body {
+    margin: 0;
+    background: #fff;
+    color: #000;
+    font-family: Georgia, 'Times New Roman', serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .col {
+    max-width: 520px;
+    padding: 64px 24px 40px 48px;
+  }
+  .mark { margin-bottom: 40px; }
+  .mark svg { display: block; }
+  h1 {
+    font-size: 30px;
+    line-height: 1.35;
+    font-weight: 700;
+    margin: 0 0 28px 0;
+  }
+  p {
+    font-size: 24px;
+    line-height: 1.45;
+    margin: 0 0 28px 0;
+    animation: fadein 1.2s ease both;
+  }
+  p:nth-of-type(2) { animation-delay: .25s; }
+  p:nth-of-type(3) { animation-delay: .5s; }
+  p:nth-of-type(4) { animation-delay: .75s; }
+  p:nth-of-type(5) { animation-delay: 1s; }
+  @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+  .links { margin: 8px 0 40px 0; animation: fadein 1.2s ease 1.2s both; }
+  .links a {
+    display: inline-block;
+    background: #f3ead7;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    line-height: 1.5;
+    padding: 0 6px;
+    margin: 0 10px 12px 0;
+  }
+  .links a:hover { background: #eadfc2; }
+  .links a::after { content: " >"; }
+  .label {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    letter-spacing: .12em;
+    text-transform: uppercase;
+    color: #666;
+    margin: 36px 0 10px 0;
+  }
+  footer {
+    font-family: -apple-system, 'Helvetica Neue', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #000;
+    margin-top: 48px;
+  }
+  footer a { color: #000; }
+  @media (max-width: 600px) {
+    .col { padding: 48px 20px 32px 24px; }
+    h1 { font-size: 26px; }
+    p, .links a { font-size: 21px; }
+  }
 </style>
 </head>
-<body><pre class="logo">RAVISH</pre>
-<pre>
-const ravish = {
-  name: "Ravir Scott",
-  real_name: "Ravish Kumar",
-  from: [
-    "Sonma, Begusarai,",
-    "Bihar, India"
-  ],
-  roles: [
-    "Music Artist",
-    "Author",
-    "Developer",
-    "Filmmaker"
-  ],
-  label: "Ravir's Wire",
-  site: "<a href='https://ravish.cyou'>https://ravish.cyou</a>",
-  contact: "<a href='mailto:hi@ravish.cyou'>hi@ravish.cyou</a>"
-};
-</pre>
-<pre>
-about = `
-  Self-made artist from a Bihar
-  village. No label, no studio,
-  no co-writers. Writes, composes,
-  produces, films and codes
-  everything himself -- rap and
-  hip-hop with cinematic sound,
-  and now the bamboo flute.
-`;
+<body>
+<div class="col">
 
+  <div class="mark">
+    <!-- hand-drawn stick figure, like a quick pen sketch -->
+    <svg width="52" height="72" viewBox="0 0 52 72" fill="none" stroke="#000" stroke-width="2.4" stroke-linecap="round">
+      <circle cx="26" cy="12" r="9" />
+      <path d="M26 21 L26 44" />
+      <path d="M8 28 L26 34 L46 26" />
+      <path d="M26 44 L12 68" />
+      <path d="M26 44 L40 68" />
+    </svg>
+  </div>
 
-sangam = {
-  title: "SANGAM (2026)",
-  sound: "Emotional hip-hop,",
-  sound2: "cinematic, lyrical",
-  idea: "A confluence -- past,",
-  idea2: "pain and purpose in",
-  idea3: "one sound.",
-  tracks: [
-    "04 Khamoshi",
-    "05 Intezzar Tera",
-    "06 Intezaar Tera"
-  ]
-};
+  <h1>Ravir Scott is an independent music artist, author, developer and filmmaker from Sonma, Begusarai, Bihar.</h1>
 
+  <p>Self-made, with no label, no studio and no co-writers. He writes, composes, produces, films and codes everything himself — rap and hip-hop with a cinematic sound, and now the bamboo flute.</p>
 
-flutes_of_sanatana = {
-  sound: "Bansuri, devotional,",
-  sound2: "instrumental",
-  idea: "Hip-hop tells the story",
-  idea2: "out loud; the flute says",
-  idea3: "what it feels like."
-};
+  <p>His album SANGAM (2026) is emotional hip-hop — a confluence of past, pain and purpose in one sound. His flute work, Flutes of Sanātana, says what hip-hop tells out loud: what it feels like. His film Lone Yet Loyal (2025) — director, writer, actor, composer, editor — is a solo production, listed on IMDb.</p>
 
+  <p>He has written five books, including two autobiographies, Turning Data Into Intelligence, Blog with Next.js, and The Ravir, a Hindi analysis of Machiavelli. He also builds things: Ravir Songs, a cinematic music player; Ravir Rank AI, for digital identity; Ravir Press, tech news; and ANONCHAT, encrypted anonymous chat.</p>
 
-film = {
-  title: "Lone Yet Loyal (2025)",
-  roles: ["Director", "Writer",
-    "Actor", "Composer", "Editor"],
-  note: "A solo production,",
-  note2: "listed on IMDb."
-};
+  <p>His music is released on his own label, Ravir's Wire. You can write to him at <a href="mailto:hi@ravish.cyou" style="background:#f3ead7;color:#000;text-decoration:none;padding:0 4px;">hi@ravish.cyou</a>, or visit his main site <a href="https://ravish.cyou" style="background:#f3ead7;color:#000;text-decoration:none;padding:0 4px;">ravish.cyou</a>.</p>
 
+  <div class="label">Listen</div>
+  <div class="links">
+    <a href="https://open.spotify.com/artist/1u7rvL1GtodxI2NqgGHV4n">Spotify</a>
+    <a href="https://music.apple.com/in/artist/ravir-scott/1826115974">Apple Music</a>
+    <a href="https://music.amazon.in/artists/B0FHHMYV6D/ravir-scott">Amazon Music</a>
+    <a href="https://www.jiosaavn.com/artist/ravir-scott/ck6zgbq8FYY_">JioSaavn</a>
+    <a href="https://www.deezer.com/search/ravir%20scott">Deezer</a>
+    <a href="https://tidal.com/search?q=ravir%20scott">Tidal</a>
+    <a href="https://youtube.com/@ravirscott">YouTube Music</a>
+  </div>
 
-books = [
-  "Ravish Kashyap -- Autobiography",
-  "Ravir Scott -- Autobiography",
-  "Turning Data Into Intelligence",
-  "Blog with Next.js",
-  "The Ravir (Hindi, Machiavelli)"
-];
+  <div class="label">Profiles</div>
+  <div class="links">
+    <a href="https://instagram.com/_ravissh">Instagram</a>
+    <a href="https://www.youtube.com/@ravirscott">YouTube</a>
+    <a href="https://github.com/ravirscott">GitHub</a>
+    <a href="https://www.linkedin.com/in/ravir-scott">LinkedIn</a>
+  </div>
 
+  <footer>
+    made by Ravish<br>
+    maintained by Muse<br>
+    (c) 2026 Ravir Scott<br>
+    no cookies, no tracking — just text
+  </footer>
 
-projects = [
-  "Ravir Songs -- music player",
-  "Ravir Rank AI -- identity SEO",
-  "Ravir Press -- tech news",
-  "ANONCHAT -- encrypted chat"
-];
-
-
-listen = [
-  "<a href='https://open.spotify.com/artist/1u7rvL1GtodxI2NqgGHV4n'>Spotify</a>",
-  "<a href='https://music.apple.com/in/artist/ravir-scott/1826115974'>Apple Music</a>",
-  "<a href='https://music.amazon.in/artists/B0FHHMYV6D/ravir-scott'>Amazon Music</a>",
-  "<a href='https://www.jiosaavn.com/artist/ravir-scott/ck6zgbq8FYY_'>JioSaavn</a>",
-  "<a href='https://www.deezer.com/search/ravir%20scott'>Deezer</a>",
-  "<a href='https://tidal.com/search?q=ravir%20scott'>Tidal</a>",
-  "<a href='https://youtube.com/@ravirscott'>YouTube Music</a>"
-];
-
-
-profiles = [
-  "<a href='https://instagram.com/_ravissh'>Instagram</a>",
-  "<a href='https://www.youtube.com/@ravirscott'>YouTube</a>",
-  "<a href='https://github.com/ravirscott'>GitHub</a>",
-  "<a href='https://www.linkedin.com/in/ravir-scott'>LinkedIn</a>"
-];
-
-
-made by Ravish
-maintained by Muse
-(c) 2026 Ravir Scott
-no cookies, no tracking -- just text
-</pre>
+</div>
 </body>
 </html>
